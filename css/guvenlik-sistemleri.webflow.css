@@ -19,6 +19,7 @@ h1 {
 h2 {
   margin-top: 15px;
   margin-bottom: 10px;
+  font-family: Inter, sans-serif;
   color: #fff;
   font-size: 32px;
   line-height: 44px;
@@ -27,8 +28,10 @@ h2 {
 }
 
 h3 {
+  position: static;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: Inter, sans-serif;
   font-size: 24px;
   line-height: 40px;
   font-weight: 400;
@@ -37,9 +40,11 @@ h3 {
 h4 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 400;
+  letter-spacing: -0.01px;
 }
 
 h5 {
@@ -61,7 +66,11 @@ h6 {
 p {
   margin-top: 5px;
   margin-bottom: 10px;
-  line-height: 24px;
+  opacity: 0.8;
+  font-family: Inter, sans-serif;
+  color: #e8eaed;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 a {
@@ -97,7 +106,7 @@ li {
   padding-left: 5px;
   font-family: Inter, sans-serif;
   color: #e8eaed;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -132,6 +141,10 @@ blockquote {
 
 ._6-col._6-col-last {
   margin-right: 0px;
+}
+
+._6-col.guvenlik {
+  width: 600px;
 }
 
 .headline-6-col {
@@ -190,6 +203,13 @@ blockquote {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+}
+
+.wrap.w50-80-start.divider {
+  height: 6px;
+  padding-top: 0px;
+  border: 1px solid #000;
+  border-radius: 4px;
 }
 
 .wrap.w50-spcbetween {
@@ -384,7 +404,7 @@ blockquote {
   display: -ms-flexbox;
   display: flex;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
@@ -551,6 +571,10 @@ blockquote {
   align-items: center;
 }
 
+.wrap.h3c {
+  margin-top: 32px;
+}
+
 ._1-col {
   display: inline-block;
   width: 60px;
@@ -693,6 +717,12 @@ blockquote {
 
 .section {
   overflow: hidden;
+}
+
+.section.dark {
+  padding-bottom: 128px;
+  background-color: #202124;
+  color: #e8eaed;
 }
 
 .text-20 {
@@ -849,11 +879,22 @@ blockquote {
 }
 
 .section-dark {
+  display: block;
   overflow: hidden;
   min-height: 80vh;
-  padding-top: 64px;
+  padding-top: 0px;
+  border-top: 6px none #660af4;
+  border-radius: 0px;
   background-color: #202124;
   color: #fff;
+}
+
+.section-dark.alarm {
+  border-top-style: solid;
+}
+
+.section-dark.blank {
+  display: none;
 }
 
 .link-dark {
@@ -899,10 +940,18 @@ blockquote {
   width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-family: Inter, sans-serif;
   font-size: 36px;
   line-height: 70px;
   font-weight: 300;
   text-transform: none;
+}
+
+.h1-jumbo.gs {
+  padding-bottom: 16px;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 60px;
 }
 
 .headline-8-col {
@@ -1006,7 +1055,7 @@ blockquote {
 .style-fill {
   min-height: 150px;
   min-width: 100%;
-  background-image: url('/static/images/style-transparent_1style-transparent.png');
+  background-image: url('../images/style-transparent_1style-transparent.png');
   background-position: 50% 50%;
   background-size: 50px;
 }
@@ -1030,7 +1079,7 @@ blockquote {
 }
 
 .text-16.text-16-60.dark {
-  color: #202124;
+  color: #e8eaed;
 }
 
 .text-16.footer-section-headline {
@@ -1400,19 +1449,19 @@ blockquote {
 }
 
 .content1-image.content1-image3 {
-  background-image: url('/static/images/Services1-Image2.jpg');
+  background-image: url('../images/Services1-Image2.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .content1-image.content1-image1 {
-  background-image: url('/static/images/Services1-Image1.jpg');
+  background-image: url('../images/Services1-Image1.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .content1-image.content1-image2 {
-  background-image: url('/static/images/Services1-Image3.jpg');
+  background-image: url('../images/Services1-Image3.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -1440,7 +1489,7 @@ blockquote {
   height: 420px;
   margin-bottom: 20px;
   border-radius: 8px;
-  background-image: url('/static/images/Feature1-Image2.jpg');
+  background-image: url('../images/Feature1-Image2.jpg');
   background-position: 0px 0px;
   background-size: cover;
 }
@@ -1448,7 +1497,7 @@ blockquote {
 .feature1-image2 {
   height: 120px;
   border-radius: 8px;
-  background-image: url('/static/images/Feature1-Image1.jpg');
+  background-image: url('../images/Feature1-Image1.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -1456,7 +1505,7 @@ blockquote {
 .feature1-image3 {
   height: 420px;
   border-radius: 8px;
-  background-image: url('/static/images/Feature1-Image3.jpg');
+  background-image: url('../images/Feature1-Image3.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -1486,7 +1535,7 @@ blockquote {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
-  background-image: url('/static/images/photo-1530841377377-3ff06c0ca713.jpg');
+  background-image: url('../images/photo-1530841377377-3ff06c0ca713.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -1549,44 +1598,44 @@ blockquote {
 }
 
 .team1-image.team1-image7 {
-  background-image: url('/static/images/Person-Pic-72x.jpg');
+  background-image: url('../images/Person-Pic-72x.jpg');
   background-size: 120px;
 }
 
 .team1-image.team1-image8 {
-  background-image: url('/static/images/Person-Pic-82x.jpg');
+  background-image: url('../images/Person-Pic-82x.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .team1-image.team1-image4 {
-  background-image: url('/static/images/Person-Pic-42x.jpg');
+  background-image: url('../images/Person-Pic-42x.jpg');
   background-size: 120px;
 }
 
 .team1-image.team1-image5 {
-  background-image: url('/static/images/Person-Pic-52x.jpg');
+  background-image: url('../images/Person-Pic-52x.jpg');
   background-position: 0px 0px;
   background-size: 120px;
 }
 
 .team1-image.team1-image3 {
-  background-image: url('/static/images/Person-Pic-32x.jpg');
+  background-image: url('../images/Person-Pic-32x.jpg');
   background-size: 120px;
 }
 
 .team1-image.team1-image2 {
-  background-image: url('/static/images/Person-Pic-22x.jpg');
+  background-image: url('../images/Person-Pic-22x.jpg');
   background-size: 120px;
 }
 
 .team1-image.team1-image1 {
-  background-image: url('/static/images/Person-Pic-12x.jpg');
+  background-image: url('../images/Person-Pic-12x.jpg');
   background-size: 120px;
 }
 
 .team1-image.team1-image6 {
-  background-image: url('/static/images/Person-Pic-62x.jpg');
+  background-image: url('../images/Person-Pic-62x.jpg');
   background-size: 120px;
 }
 
@@ -1618,8 +1667,8 @@ blockquote {
 }
 
 .cta1-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.75)), to(rgba(17, 18, 18, 0.75))), url('/static/images/CTA2-Background.jpg');
-  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.75), rgba(17, 18, 18, 0.75)), url('/static/images/CTA2-Background.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.75)), to(rgba(17, 18, 18, 0.75))), url('../images/CTA2-Background.jpg');
+  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.75), rgba(17, 18, 18, 0.75)), url('../images/CTA2-Background.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
 }
@@ -1656,7 +1705,7 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('/static/images/hero2-woman-light.jpg');
+  background-image: url('../images/hero2-woman-light.jpg');
   background-position: 50% 50%;
   background-size: 980px;
   background-repeat: no-repeat;
@@ -1672,7 +1721,7 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('/static/images/hero2-white.jpg');
+  background-image: url('../images/hero2-white.jpg');
   background-position: 60% 50%;
   background-size: 980px;
   background-repeat: no-repeat;
@@ -1723,7 +1772,7 @@ blockquote {
 }
 
 .content5-headline-wrapper {
-  padding-right: 80px;
+  padding-right: 0px;
 }
 
 .testimonial1-person-wrapper {
@@ -1771,41 +1820,41 @@ blockquote {
   height: 340px;
   margin-bottom: 30px;
   border-radius: 8px;
-  background-image: url('/static/images/inma-santiago-746452-unsplash.jpg');
+  background-image: url('../images/inma-santiago-746452-unsplash.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .content4-image.content4-image5 {
-  background-image: url('/static/images/shifaaz-shamoon-300079-unsplash.jpg');
+  background-image: url('../images/shifaaz-shamoon-300079-unsplash.jpg');
 }
 
 .content4-image.content4-image2 {
-  background-image: url('/static/images/nathan-dumlao-483396-unsplash.jpg');
+  background-image: url('../images/nathan-dumlao-483396-unsplash.jpg');
 }
 
 .content4-image.content4-image7 {
-  background-image: url('/static/images/brooke-lark-609908-unsplash.jpg');
+  background-image: url('../images/brooke-lark-609908-unsplash.jpg');
 }
 
 .content4-image.content4-image3 {
-  background-image: url('/static/images/annie-spratt-216207-unsplash.jpg');
+  background-image: url('../images/annie-spratt-216207-unsplash.jpg');
 }
 
 .content4-image.content4-image6 {
-  background-image: url('/static/images/zohre-nemati-446136-unsplash.jpg');
+  background-image: url('../images/zohre-nemati-446136-unsplash.jpg');
 }
 
 .content4-image.content4-image8 {
-  background-image: url('/static/images/natalia-y-469694-unsplash.jpg');
+  background-image: url('../images/natalia-y-469694-unsplash.jpg');
 }
 
 .content4-image.content4-image4 {
-  background-image: url('/static/images/olena-sergienko-725307-unsplash.jpg');
+  background-image: url('../images/olena-sergienko-725307-unsplash.jpg');
 }
 
 .content4-image.content4-image9 {
-  background-image: url('/static/images/jeremy-bishop-334996-unsplash.jpg');
+  background-image: url('../images/jeremy-bishop-334996-unsplash.jpg');
 }
 
 .content4-items {
@@ -1843,8 +1892,8 @@ blockquote {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 11, 25, 0.3)), to(rgba(9, 11, 25, 0.3))), url('/static/images/businessman-scan-fingerprint-biometric-identity-approval-business-technology-safety-concept-1.jpg');
-  background-image: linear-gradient(180deg, rgba(9, 11, 25, 0.3), rgba(9, 11, 25, 0.3)), url('/static/images/businessman-scan-fingerprint-biometric-identity-approval-business-technology-safety-concept-1.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 11, 25, 0.3)), to(rgba(9, 11, 25, 0.3))), url('../images/businessman-scan-fingerprint-biometric-identity-approval-business-technology-safety-concept-1.jpg');
+  background-image: linear-gradient(180deg, rgba(9, 11, 25, 0.3), rgba(9, 11, 25, 0.3)), url('../images/businessman-scan-fingerprint-biometric-identity-approval-business-technology-safety-concept-1.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, 100%;
   background-repeat: repeat, no-repeat;
@@ -1884,20 +1933,20 @@ blockquote {
 
 .content6-pic.content6-image1 {
   height: 320px;
-  background-image: url('/static/images/sacha-styles-769064-unsplash.jpg');
+  background-image: url('../images/identification-scanning-system-1-1.jpg');
 }
 
 .content6-pic.content6-image3 {
-  background-image: url('/static/images/ivars-utinsns-707750-unsplash.jpg');
+  background-image: url('../images/smoke-fire-detector-smoke-detector-ceiling-1.jpg');
 }
 
 .content6-pic.content6-image2 {
-  background-image: url('/static/images/ivan-bandura-659533-unsplash.jpg');
+  background-image: url('../images/businesswoman-using-key-unlock-her-car-door-1.jpg');
 }
 
 .content6-pic.content6-image4 {
   height: 320px;
-  background-image: url('/static/images/ruth-troughton-384709-unsplash.jpg');
+  background-image: url('../images/bekçi-tur-sistemi.jpg');
 }
 
 .testimonial2-col {
@@ -1952,7 +2001,7 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('/static/images/header-2-landing.jpg');
+  background-image: url('../images/header-2-landing.jpg');
   background-position: 50% 50%;
   background-size: 940px;
   background-repeat: no-repeat;
@@ -1968,17 +2017,17 @@ blockquote {
   height: 60px;
   margin-right: 20px;
   border-radius: 8px;
-  background-image: url('/static/images/Person-Pic-62x.jpg');
+  background-image: url('../images/Person-Pic-62x.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .testimonial1-pic.testimonial1-pic3 {
-  background-image: url('/static/images/Person-Pic-32x.jpg');
+  background-image: url('../images/Person-Pic-32x.jpg');
 }
 
 .testimonial1-pic.testimonial1-pic2 {
-  background-image: url('/static/images/Person-Pic-22x.jpg');
+  background-image: url('../images/Person-Pic-22x.jpg');
 }
 
 .testimonial1-item {
@@ -2085,14 +2134,14 @@ blockquote {
 .blog1-article-cover.blog1-article-cover-1 {
   width: 100%;
   margin-top: 20px;
-  background-image: url('/static/images/card22x.jpg');
+  background-image: url('../images/card22x.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .blog1-article-cover.blog1-article-cover-2 {
   margin-bottom: 20px;
-  background-image: url('/static/images/alexander-popov-522100-unsplash.jpg');
+  background-image: url('../images/alexander-popov-522100-unsplash.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -2389,8 +2438,8 @@ blockquote {
 
 .cta2.cta2-dark.cta2-image {
   border: 0px none transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.6)), to(rgba(17, 18, 18, 0.6))), url('/static/images/CTA2-Background.jpg');
-  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.6), rgba(17, 18, 18, 0.6)), url('/static/images/CTA2-Background.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.6)), to(rgba(17, 18, 18, 0.6))), url('../images/CTA2-Background.jpg');
+  background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.6), rgba(17, 18, 18, 0.6)), url('../images/CTA2-Background.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
 }
@@ -2590,17 +2639,17 @@ blockquote {
   height: 60px;
   margin-bottom: 25px;
   border-radius: 8px;
-  background-image: url('/static/images/Person-Pic-32x.jpg');
+  background-image: url('../images/Person-Pic-32x.jpg');
   background-position: 0px 0px;
   background-size: cover;
 }
 
 .testimonial5-image.testimonial5-image3 {
-  background-image: url('/static/images/Person-Pic-52x.jpg');
+  background-image: url('../images/Person-Pic-52x.jpg');
 }
 
 .testimonial5-image.testimonial5-image2 {
-  background-image: url('/static/images/Person-Pic-42x.jpg');
+  background-image: url('../images/Person-Pic-42x.jpg');
 }
 
 .testimonial5-content-wrap {
@@ -2754,7 +2803,7 @@ blockquote {
   margin-right: -20px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  background-image: url('/static/images/signup-cover.jpg');
+  background-image: url('../images/signup-cover.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -2812,13 +2861,13 @@ blockquote {
 }
 
 .blog2-article-cover.blog2-article-content2 {
-  background-image: url('/static/images/annie-spratt-216207-unsplash.jpg');
+  background-image: url('../images/annie-spratt-216207-unsplash.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .blog2-article-cover.blog2-article-content1 {
-  background-image: url('/static/images/sacha-styles-769064-unsplash.jpg');
+  background-image: url('../images/sacha-styles-769064-unsplash.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -2879,17 +2928,17 @@ blockquote {
   width: 80px;
   height: 80px;
   border-radius: 100%;
-  background-image: url('/static/images/Avatar-4.jpg');
+  background-image: url('../images/Avatar-4.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .team2-profile-pic.team2-profile-pic-image3 {
-  background-image: url('/static/images/Person-Pic-22x.jpg');
+  background-image: url('../images/Person-Pic-22x.jpg');
 }
 
 .team2-profile-pic.team2-profile-pic-image2 {
-  background-image: url('/static/images/Person-Pic-32x.jpg');
+  background-image: url('../images/Person-Pic-32x.jpg');
 }
 
 .blog2-articles-wrap {
@@ -2911,19 +2960,19 @@ blockquote {
 }
 
 .blog5-article-cover.blog5-article-image3 {
-  background-image: url('/static/images/article-cover-3.jpg');
+  background-image: url('../images/article-cover-3.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .blog5-article-cover.blog5-article-image1 {
-  background-image: url('/static/images/card-cover.jpg');
+  background-image: url('../images/card-cover.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .blog5-article-cover.blog5-article-image2 {
-  background-image: url('/static/images/article-cover-2.jpg');
+  background-image: url('../images/article-cover-2.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -2941,7 +2990,7 @@ blockquote {
 }
 
 .blog3-card.blog3-card2-content {
-  background-image: url('/static/images/card2.jpg');
+  background-image: url('../images/card2.jpg');
   background-position: 50% 50%;
   background-size: cover;
   color: #fff;
@@ -2949,35 +2998,35 @@ blockquote {
 
 .blog3-card.blog3-card1-content {
   position: relative;
-  background-image: url('/static/images/card1.jpg');
+  background-image: url('../images/card1.jpg');
   background-position: 50% 50%;
   background-size: cover;
   color: #fff;
 }
 
 .blog3-card.blog3-card4-content {
-  background-image: url('/static/images/card42x.jpg');
+  background-image: url('../images/card42x.jpg');
   background-position: 50% 50%;
   background-size: cover;
   color: #111212;
 }
 
 .blog3-card.blog3-card3-content {
-  background-image: url('/static/images/card3.jpg');
+  background-image: url('../images/card3.jpg');
   background-position: 50% 50%;
   background-size: cover;
   color: #111212;
 }
 
 .blog3-card.blog3-card5-content {
-  background-image: url('/static/images/card52x.jpg');
+  background-image: url('../images/card52x.jpg');
   background-position: 50% 50%;
   background-size: cover;
   color: #111212;
 }
 
 .blog3-card.blog3-card6-content {
-  background-image: url('/static/images/card62x.jpg');
+  background-image: url('../images/card62x.jpg');
   background-position: 50% 50%;
   background-size: cover;
   color: #fff;
@@ -2987,17 +3036,17 @@ blockquote {
   height: 230px;
   margin-bottom: 25px;
   border-radius: 8px;
-  background-image: url('/static/images/Screenshot-2018-05-01-20.54.33.png');
+  background-image: url('../images/Screenshot-2018-05-01-20.54.33.png');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .blog4-article-image.blog4-article-content2 {
-  background-image: url('/static/images/roos-oosterbroek-558868-unsplash2x.jpg');
+  background-image: url('../images/roos-oosterbroek-558868-unsplash2x.jpg');
 }
 
 .blog4-article-image.blog4-article-content3 {
-  background-image: url('/static/images/article-cover-1.jpg');
+  background-image: url('../images/article-cover-1.jpg');
 }
 
 .blog5-articles-wrapper {
@@ -3075,13 +3124,13 @@ blockquote {
   width: 120px;
   height: 120px;
   border-radius: 100%;
-  background-image: url('/static/images/Person-Pic-62x.jpg');
+  background-image: url('../images/Person-Pic-62x.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .team3-avatar.team3-avatar-image2 {
-  background-image: url('/static/images/Person-Pic-12x.jpg');
+  background-image: url('../images/Person-Pic-12x.jpg');
 }
 
 .team2-profilecard-wrapper {
@@ -3190,20 +3239,20 @@ blockquote {
 }
 
 .home-landing-image-wrap.home-landing-image1 {
-  background-image: url('/static/images/home-landing12x.jpg');
+  background-image: url('../images/home-landing12x.jpg');
   background-position: 50% 1px;
   background-size: 300px;
   background-attachment: scroll;
 }
 
 .home-landing-image-wrap.home-landing-image2 {
-  background-image: url('/static/images/home-landing22x.jpg');
+  background-image: url('../images/home-landing22x.jpg');
   background-position: 50% -1px;
   background-size: 300px;
 }
 
 .home-landing-image-wrap.home-landing-image3 {
-  background-image: url('/static/images/home-landing32x.jpg');
+  background-image: url('../images/home-landing32x.jpg');
   background-position: 50% -1px;
   background-size: 300px;
 }
@@ -3587,7 +3636,7 @@ blockquote {
 .products1-image-wrap {
   height: 460px;
   border-radius: 8px;
-  background-image: url('/static/images/products1-image_1.jpg');
+  background-image: url('../images/products1-image_1.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -3640,25 +3689,25 @@ blockquote {
 }
 
 .products2-image.products2-image1 {
-  background-image: url('/static/images/products1-image.jpg');
+  background-image: url('../images/products1-image.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .products2-image.products2-image2 {
-  background-image: url('/static/images/products2-image2.jpg');
+  background-image: url('../images/products2-image2.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .products2-image.products2-image3 {
-  background-image: url('/static/images/products2-image3.jpg');
+  background-image: url('../images/products2-image3.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .products2-image.products2-image4 {
-  background-image: url('/static/images/products2-image4.jpg');
+  background-image: url('../images/products2-image4.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -3683,7 +3732,7 @@ blockquote {
   height: 460px;
   margin-bottom: 15px;
   border-radius: 8px;
-  background-image: url('/static/images/products3-image1.jpg');
+  background-image: url('../images/products3-image1.jpg');
   background-position: 50% 50%;
   background-size: cover;
   direction: ltr;
@@ -3692,7 +3741,7 @@ blockquote {
 .products3-small-image-wrap {
   height: 120px;
   border-radius: 8px;
-  background-image: url('/static/images/products3-image3.jpg');
+  background-image: url('../images/products3-image3.jpg');
   background-position: 50% 50%;
   background-size: cover;
   direction: ltr;
@@ -3700,17 +3749,17 @@ blockquote {
 
 .products3-small-image-wrap.products3-small-image1 {
   height: 140px;
-  background-image: url('/static/images/products3-image2.jpg');
+  background-image: url('../images/products3-image2.jpg');
 }
 
 .products3-small-image-wrap.products3-small-image2 {
   height: 140px;
-  background-image: url('/static/images/products3-image3.jpg');
+  background-image: url('../images/products3-image3.jpg');
 }
 
 .products3-small-image-wrap.products3-small-image3 {
   height: 140px;
-  background-image: url('/static/images/products3-image4.jpg');
+  background-image: url('../images/products3-image4.jpg');
 }
 
 .products3-content-wrap {
@@ -3761,11 +3810,13 @@ blockquote {
 .heading-2 {
   margin-bottom: 32px;
   font-family: Inter, sans-serif;
+  color: #e8eaed;
+  font-size: 34px;
   line-height: 46px;
 }
 
 .heading-2.dark {
-  color: #202124;
+  color: #fff;
 }
 
 .text-block {
@@ -3779,7 +3830,7 @@ blockquote {
 }
 
 .text-block.dark {
-  color: #202124;
+  color: #e8eaed;
 }
 
 .heading-3 {
@@ -3833,6 +3884,7 @@ blockquote {
 
 .list-item {
   opacity: 0.8;
+  font-size: 18px;
   line-height: 30px;
 }
 
@@ -3896,10 +3948,16 @@ blockquote {
 }
 
 .navbar {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 16px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3940,6 +3998,124 @@ blockquote {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+}
+
+.heading-4 {
+  font-family: Inter, sans-serif;
+  color: #fff;
+}
+
+.intro {
+  padding-top: 64px;
+  border-top-style: none;
+}
+
+.article {
+  position: relative;
+}
+
+.heading-1 {
+  font-family: Inter, sans-serif;
+  letter-spacing: -0.01px;
+}
+
+.rich-text-block {
+  font-family: Inter, sans-serif;
+}
+
+.text-block-2 {
+  font-family: Inter, sans-serif;
+}
+
+.link-3 {
+  display: inline-block;
+}
+
+.anchor-link {
+  position: relative;
+  top: -8px;
+  display: inline-block;
+  color: #b286f5;
+  font-size: 12px;
+}
+
+.text-block-3 {
+  opacity: 0.8;
+  font-family: Inter, sans-serif;
+  color: #e8eaed;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.link-4 {
+  opacity: 0.8;
+  color: #e8eaed;
+  text-decoration: underline;
+}
+
+.refs {
+  font-size: 14px;
+}
+
+._12-col {
+  width: 100%;
+}
+
+.box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.paragraph {
+  letter-spacing: 0.02em;
+}
+
+.hero-p {
+  font-size: 15px;
+}
+
+.utility-page-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.utility-page-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -4275,6 +4451,10 @@ blockquote {
     text-align: center;
   }
 
+  .text-14.text-14-60 {
+    text-align: left;
+  }
+
   .section-dark {
     padding-right: 0px;
     padding-left: 0px;
@@ -4593,8 +4773,8 @@ blockquote {
   }
 
   .hero2-light-alt2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.4)), to(hsla(0, 0%, 100%, 0.4))), url('/static/images/hero2-woman-light.jpg');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.4), hsla(0, 0%, 100%, 0.4)), url('/static/images/hero2-woman-light.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.4)), to(hsla(0, 0%, 100%, 0.4))), url('../images/hero2-woman-light.jpg');
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.4), hsla(0, 0%, 100%, 0.4)), url('../images/hero2-woman-light.jpg');
     background-position: 0px 0px, 150% 50%;
     background-size: auto, 980px;
     background-repeat: repeat, no-repeat;
@@ -4646,8 +4826,8 @@ blockquote {
   }
 
   .hero2-dark-alt2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.4)), to(rgba(17, 18, 18, 0.4))), url('/static/images/businessman-scan-fingerprint-biometric-identity-approval-business-technology-safety-concept-1.jpg');
-    background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.4), rgba(17, 18, 18, 0.4)), url('/static/images/businessman-scan-fingerprint-biometric-identity-approval-business-technology-safety-concept-1.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.4)), to(rgba(17, 18, 18, 0.4))), url('../images/businessman-scan-fingerprint-biometric-identity-approval-business-technology-safety-concept-1.jpg');
+    background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.4), rgba(17, 18, 18, 0.4)), url('../images/businessman-scan-fingerprint-biometric-identity-approval-business-technology-safety-concept-1.jpg');
     background-position: 0px 0px, 50% 50%;
     background-size: auto, 587px;
     background-repeat: repeat, no-repeat;
@@ -4693,8 +4873,8 @@ blockquote {
   }
 
   .hero2-dark {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.4)), to(rgba(17, 18, 18, 0.4))), url('/static/images/header-2-landing.jpg');
-    background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.4), rgba(17, 18, 18, 0.4)), url('/static/images/header-2-landing.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.4)), to(rgba(17, 18, 18, 0.4))), url('../images/header-2-landing.jpg');
+    background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.4), rgba(17, 18, 18, 0.4)), url('../images/header-2-landing.jpg');
     background-position: 0px 0px, -280px 50%;
     background-size: auto, 940px;
     background-repeat: repeat, no-repeat;
@@ -5177,8 +5357,8 @@ blockquote {
   .hero6-wrap {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 39, 39, 0.9)), to(#121212)), url('/static/images/hero-home-mob.png');
-    background-image: linear-gradient(180deg, rgba(39, 39, 39, 0.9), #121212), url('/static/images/hero-home-mob.png');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 39, 39, 0.9)), to(#121212)), url('../images/hero-home-mob.png');
+    background-image: linear-gradient(180deg, rgba(39, 39, 39, 0.9), #121212), url('../images/hero-home-mob.png');
     background-position: 0px 0px, 50% -40px;
     background-size: auto, cover;
   }
@@ -5222,19 +5402,19 @@ blockquote {
   }
 
   .home-landing-image-wrap.home-landing-image1 {
-    background-image: url('/static/images/home-landing1-mob2x.jpg');
+    background-image: url('../images/home-landing1-mob2x.jpg');
     background-position: 50% -1px;
     background-size: cover;
   }
 
   .home-landing-image-wrap.home-landing-image2 {
-    background-image: url('/static/images/home-landing2-mob2x.jpg');
+    background-image: url('../images/home-landing2-mob2x.jpg');
     background-position: 50% -1px;
     background-size: cover;
   }
 
   .home-landing-image-wrap.home-landing-image3 {
-    background-image: url('/static/images/home-landing3-mob2x.jpg');
+    background-image: url('../images/home-landing3-mob2x.jpg');
     background-position: 50% -1px;
     background-size: cover;
   }
@@ -5253,7 +5433,20 @@ blockquote {
   }
 
   .content9-item-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     padding-right: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     text-align: center;
   }
 
@@ -5387,11 +5580,23 @@ blockquote {
   .products3-small-images-wrap {
     display: none;
   }
+
+  .text-block-2 {
+    padding-bottom: 32px;
+  }
+
+  .box {
+    width: 645px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   ._6-col {
     margin-right: 0px;
+  }
+
+  ._6-col.guvenlik {
+    max-width: 100%;
   }
 
   .wrap {
@@ -5422,6 +5627,10 @@ blockquote {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .wrap.w50-center {
+    margin-left: 0px;
   }
 
   .btn.btn-white.blog2-card-cta {
@@ -5570,20 +5779,24 @@ blockquote {
   }
 
   .hero2-light-alt2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.6)), to(hsla(0, 0%, 100%, 0.6))), url('/static/images/hero2-woman-light.jpg');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0.6)), url('/static/images/hero2-woman-light.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.6)), to(hsla(0, 0%, 100%, 0.6))), url('../images/hero2-woman-light.jpg');
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0.6)), url('../images/hero2-woman-light.jpg');
     background-position: 0px 0px, 100% 50%;
   }
 
+  .content5-headline-wrapper.guvenlik-sistemleri {
+    text-align: left;
+  }
+
   .hero2-dark-alt2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(null), to(null)), url('/static/images/hero2-woman.jpg');
-    background-image: linear-gradient(180deg, null, null), url('/static/images/hero2-woman.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(null), to(null)), url('../images/hero2-woman.jpg');
+    background-image: linear-gradient(180deg, null, null), url('../images/hero2-woman.jpg');
     background-position: 0px 0px, 50% 50%;
   }
 
   .hero2-dark {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.4)), to(rgba(17, 18, 18, 0.4))), url('/static/images/header-2-landing.jpg');
-    background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.4), rgba(17, 18, 18, 0.4)), url('/static/images/header-2-landing.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.4)), to(rgba(17, 18, 18, 0.4))), url('../images/header-2-landing.jpg');
+    background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.4), rgba(17, 18, 18, 0.4)), url('../images/header-2-landing.jpg');
     background-position: 0px 0px, 100% 50%;
   }
 
@@ -5631,7 +5844,7 @@ blockquote {
   }
 
   .blog2-article-cover.blog2-article-content1 {
-    background-image: url('/static/images/rawpixel-589084-unsplash.jpg');
+    background-image: url('../images/rawpixel-589084-unsplash.jpg');
   }
 
   .team2-profile-card {
@@ -5656,6 +5869,17 @@ blockquote {
   .home-footer-link {
     margin-left: 0px;
   }
+
+  .box {
+    max-width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .menu-button {
+    position: absolute;
+    right: 32px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5664,11 +5888,26 @@ blockquote {
     padding-left: 8px;
   }
 
+  .wrap.w80-50-start.guvenlik-aside {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .wrap.w50-start {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
   .wrap.w50-center {
     margin-right: 0px;
     margin-left: 0px;
+    padding-top: 20px;
     padding-right: 4px;
     padding-left: 4px;
+  }
+
+  .wrap.h3c {
+    padding-left: 8px;
   }
 
   .tagline {
@@ -5678,6 +5917,7 @@ blockquote {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    text-align: center;
     letter-spacing: 1px;
   }
 
@@ -5702,6 +5942,16 @@ blockquote {
 
   .btn.hero4-left-button {
     margin-right: 0px;
+  }
+
+  .text-14.text-14-60 {
+    text-align: left;
+  }
+
+  .h1-jumbo.gs {
+    max-width: 100vw;
+    font-size: 40px;
+    text-align: left;
   }
 
   .btn-big {
@@ -5748,18 +5998,23 @@ blockquote {
   }
 
   .hero2-light-alt2 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.8)), to(hsla(0, 0%, 100%, 0.8))), url('/static/images/hero2-woman-light.jpg');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0.8)), url('/static/images/hero2-woman-light.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.8)), to(hsla(0, 0%, 100%, 0.8))), url('../images/hero2-woman-light.jpg');
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0.8)), url('../images/hero2-woman-light.jpg');
     background-position: 0px 0px, 88% 50%;
+  }
+
+  .hero2-dark-alt2 {
+    height: 800px;
   }
 
   .hero2-text-wrap {
     max-width: 100%;
+    margin-top: 32px;
   }
 
   .hero2-dark {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.4)), to(rgba(17, 18, 18, 0.4))), url('/static/images/header-2-landing.jpg');
-    background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.4), rgba(17, 18, 18, 0.4)), url('/static/images/header-2-landing.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 18, 0.4)), to(rgba(17, 18, 18, 0.4))), url('../images/header-2-landing.jpg');
+    background-image: linear-gradient(180deg, rgba(17, 18, 18, 0.4), rgba(17, 18, 18, 0.4)), url('../images/header-2-landing.jpg');
     background-position: 0px 0px, 80% 50%;
   }
 
@@ -5858,6 +6113,22 @@ blockquote {
     margin-top: 30px;
   }
 
+  .content9-item-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
   .cta4-headline-extrajumbo {
     width: 100%;
   }
@@ -5892,6 +6163,45 @@ blockquote {
   .heading-2 {
     font-size: 30px;
   }
+
+  .heading-4 {
+    text-align: left;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 940px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .heading-5 {
+    text-align: left;
+  }
+
+  .heading-6 {
+    max-width: 100vw;
+  }
+
+  .heading-7 {
+    max-width: 100vw;
+  }
+
+  .paragraph-2 {
+    width: 100%;
+  }
+
+  .heading-8 {
+    width: 100vw;
+  }
+
+  .paragraph-3 {
+    width: 100%;
+  }
+
+  .hero-p {
+    font-size: 13px;
+    text-align: center;
+  }
 }
 
-html{visibility: visible;opacity:1;}
