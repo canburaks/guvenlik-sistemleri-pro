@@ -4118,6 +4118,12 @@ blockquote {
   text-align: center;
 }
 
+.block-quote {
+  border-left-color: #660af4;
+  font-family: Merriweather, serif;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 991px) {
   .style-wrap {
     text-align: center;
