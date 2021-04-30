@@ -746,6 +746,10 @@ blockquote {
   font-size: 20px;
 }
 
+.regional {
+  margin-top: 32px;
+}
+
 @media screen and (max-width: 991px) {
   ._6-col {
     width: 100%;
