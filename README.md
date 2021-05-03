@@ -7,4 +7,4 @@ Aynı zamanda yangın alarm sistemleri olarak da geçen ve içerisinde duman ded
 
 <br/>
 
-Not: Bu rehber [İzmir alarm sistemleri](https://filizguvenlik.com.tr) kuruluşu olan Filiz Güvenlik Sistemleri tarafından hazırlanmıştır. 
+Not: [Güvenlik sistemleri](https://guvenlik.sistemleri.pro/) rehberi [İzmir alarm sistemleri](https://filizguvenlik.com.tr) kuruluşu olan Filiz Güvenlik Sistemleri tarafından hazırlanmıştır. 
