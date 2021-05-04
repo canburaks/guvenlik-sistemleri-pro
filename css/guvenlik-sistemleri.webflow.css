@@ -249,7 +249,7 @@ blockquote {
 }
 
 .tagline {
-  opacity: 0.6;
+  opacity: 0.8;
   font-family: Inter, sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
@@ -477,6 +477,7 @@ blockquote {
 
 .heading {
   width: 100%;
+  opacity: 1;
   font-family: Inter, sans-serif;
   font-size: 28px;
   font-weight: 400;
@@ -721,6 +722,7 @@ blockquote {
 }
 
 .hero-p {
+  opacity: 0.9;
   font-size: 15px;
 }
 
