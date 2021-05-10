@@ -913,6 +913,10 @@ blockquote {
   letter-spacing: 1px;
 }
 
+.link-5 {
+  color: #e8eaed;
+}
+
 @media screen and (max-width: 991px) {
   ._6-col {
     width: 100%;
