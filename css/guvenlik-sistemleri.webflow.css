@@ -679,6 +679,10 @@ blockquote {
   position: relative;
 }
 
+.guvenlik {
+  color: #e8eaed;
+}
+
 .text-block-2 {
   font-family: Inter, sans-serif;
 }
@@ -914,6 +918,12 @@ blockquote {
 }
 
 .link-5 {
+  color: #e8eaed;
+}
+
+.text-block-4 {
+  opacity: 0.8;
+  font-family: Inter, sans-serif;
   color: #e8eaed;
 }
 
