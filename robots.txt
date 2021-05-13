@@ -1,5 +1,3 @@
 User-Agent: *
 Allow: /
-Disallow: /documents/ # Block the /pdfs/directory.
-Disallow: *.pdf  # Block pdf files. Non-standard but works for major search engines.
 Sitemap: https://guvenlik.sistemleri.pro/sitemap.xml
